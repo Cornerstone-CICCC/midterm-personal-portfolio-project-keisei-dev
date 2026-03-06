@@ -1,6 +1,6 @@
 # Mid Term - Personal Portfolio Website
 
-**Live Deployment Link:** [Insert Link Here]
+**Live Deployment Link:** [chic-sfogliatella-3a974c.netlify.app]
 
 ## Goal
 
