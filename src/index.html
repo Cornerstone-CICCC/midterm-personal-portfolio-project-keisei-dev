@@ -1,25 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Website</title>
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Keisei Kondo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="icon">
-            <img src="./images/Sample_User_Icon.png" class="invert" alt="Icon">
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="nav-logo">Keisei.dev</span>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="container">
+      <h1 class="hero-title">Hi, I'm <span>Keisei Kondo</span></h1>
+      <p class="hero-subtitle">Frontend Developer</p>
+      <a href="#contact" class="btn btn-primary">Get In Touch</a>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-divider"></div>
+
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1537884944318-390069bb8665?w=400&q=80" alt="Working photo" />
         </div>
-        <div class="buttons">
-            <button>Home</button>
-            <button>About</button>
-            <button>Contact</button>
+        <div class="about-text">
+          <p>Hi! I'm a web development student in Vancouver, Canada, building a strong foundation in HTML, CSS, and JavaScript.</p>
+          <p>I'm passionate about creating websites that are both functional and visually appealing.</p>
+          <p>My goal is to become a Full-Stack Developer and contribute to meaningful products.</p>
         </div>
-    </nav>
-    <main>
-        <h1>This is an example website</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
-    </main>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="section-divider"></div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3 class="project-name">Personal Portfolio</h3>
+          <p class="project-desc">A clean, responsive portfolio website built with HTML and CSS.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3 class="project-name">Project 2</h3>
+          <p class="project-desc">Currently in the planning phase. Details will be updated soon!</p>
+          <div class="project-tags">
+            <span class="tag">Planning</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3 class="project-name">Project 3</h3>
+          <p class="project-desc">Under consideration. Exploring ideas for my next web application.</p>
+          <div class="project-tags">
+            <span class="tag">TBD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="section-divider"></div>
+
+      <div class="skills-wrapper">
+        <div class="skills-category">
+          <h3>Technical Skills</h3>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span>HTML <small>(learning)</small></span>
+              <span>60%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 60%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span>CSS <small>(learning)</small></span>
+              <span>50%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 50%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span>JavaScript <small>(learning)</small></span>
+              <span>50%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 50%;"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>Soft Skills</h3>
+          <ul class="soft-skills-list">
+            <li>Team Collaboration</li>
+            <li>Problem Solving</li>
+            <li>Communication</li>
+            <li>Time Management</li>
+            <li>Adaptability</li>
+            <li>Quick Learner</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="section-divider"></div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="timeline-date">2026 - Present</p>
+          <h3>Student Developer</h3>
+          <p class="timeline-company">Cornerstone International Community College of Canada</p>
+          <p>Learning modern web technologies and building various personal projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container text-center">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-divider centered"></div>
+      <p class="contact-intro">I'm currently looking for new opportunities. Feel free to reach out!</p>
+      
+      <div class="contact-links">
+        <a href="mailto:imjoshuaa0019@icloud.com"><i class="fa fa-envelope"></i> imjoshuaa0019@icloud.com</a>
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <br>
+      <a href="mailto:imjoshuaa0019@icloud.com" class="btn btn-primary">Say Hello</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Keisei Kondo | Built with HTML & CSS</p>
+    </div>
+  </footer>
+
 </body>
 </html>
